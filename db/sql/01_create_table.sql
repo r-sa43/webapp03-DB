@@ -20,7 +20,8 @@ CREATE TABLE `d_posts`(
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 DROP TABLE IF EXISTS `m_good`;
-CREATE TABLE `m_good`(
+DROP TABLE IF EXISTS `d_good`;
+CREATE TABLE `d_good`(
     `post_id` bigint NOT NULL COMMENT '投稿ID',
     `user_id` int NOT NULL COMMENT 'ユーザID',
     PRIMARY KEY (`post_id`, `user_id`)
