@@ -1,6 +1,6 @@
 LOCK TABLES `m_users` WRITE;
-INSERT INTO webappdb.m_users (user_cognito_id,name,password,email,created_at,updated_at) VALUES
-	 ('xxx','Sashimi','test','sashimi@gmail.com','2022-02-18 18:07:47','2022-02-18 18:07:47');
+INSERT INTO webappdb.m_users (name,password,email,created_at,updated_at) VALUES
+	 ('user1','$2a$10$WL7N.ouKrgGyGfVjjPBtTOgOivB4XtjSDXWGAfgf3WOOg4ZbUA4oe','test@gmail.com','2022-02-18 18:07:47','2022-02-18 18:07:47');
 UNLOCK TABLES;
 
 LOCK TABLES `d_posts` WRITE;
